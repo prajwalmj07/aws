@@ -1,4 +1,11 @@
 #!/bin/bash
+#########
+# about: to list the users with access tot the repository
+# input: export username="" export token=""
+# owner: Prajwal
+#########
+
+helper()
 
 # GitHub API URL
 API_URL="https://api.github.com"
@@ -34,6 +41,13 @@ function list_users_with_read_access {
         echo "Users with read access to ${REPO_OWNER}/${REPO_NAME}:"
         echo "$collaborators"
     fi
+}
+
+funtion helper{
+expected_cmd_args=2
+if[$# -ne $expected_cmd_args];then
+	echo"please execute the script with required cmd args"
+
 }
 
 # Main script
