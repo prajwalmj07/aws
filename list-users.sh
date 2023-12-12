@@ -43,7 +43,7 @@ function list_users_with_read_access {
     fi
 }
 
-funtion helper{
+function helper{
 expected_cmd_args=2
 if[$# -ne $expected_cmd_args];then
 	echo"please execute the script with required cmd args"
